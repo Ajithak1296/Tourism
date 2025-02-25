@@ -19,3 +19,14 @@ body{
     background-image: linear-gradient(to bottom right, red, yellow,red );
     opacity: 0.3;
 }
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, rgb(171, 15, 15), rgb(35, 193, 224));
+    opacity: 0.2;
+
+}
