@@ -11,67 +11,69 @@
     <script src="assets/js/jquary.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <header>
-           <!-- Navbar -->
-       <div class="container-fluid bg-secondary rounded-top">
-        <nav class="navbar navbar-expand-sm">
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar" aria-controls="myNavBarcon" aria-expanded="false"
-               aria-label="toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse justify-content-center" id="myNavBar">
-               <ul class="navbar-nav">
-                   <li class="nav-item">
-                       <a href="Home.html" class="nav-link text-warning">Home</a>
-                   </li>
-                   <li class="nav-item">
-                       <a href="#aboutus" class="nav-link text-warning">About US</a>
-                   </li>
-                   <li class="nav-item">
-                       <a href="#menus" class="nav-link text-warning">Menus</a>
-                   </li>
-                   <li class="nav-item">
-                       <a href="#offers" class="nav-link text-warning">Offers</a>
-                   </li>
-                   <li class="nav-item">
-                       <a href="#masterchefs"class="nav-link text-warning">Masterchefs</a>
-                   </li>
-                   <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle text-warning" href="#pages" id="navberDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                           <li class="dropdown-item">
-                               <a href="#ourservice" class="nav-link"><i class="fa-solid fa-play me-2 text-primary"></i>Our Service</a>
-                           </li>
-                           <li class="dropdown-item">
-                               <a href="#testimonial" class="nav-link"><i class="fa-solid fa-play me-2 text-primary"></i>Testimonial</a>
-                           </li>
-                       </ul>                            
-                   </li>
-                   <li class="nav-item">
-                       <a href="#contactus" class="nav-link text-warning">Contact us</a>
-                   </li>
-               </ul>
-           </div>
-       </div>
-   </nav>
-   <!-- End Navbar -->
-        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="image/tour-logo.jpg" width="30" height="30" loading="lazy" class="d-inline-block align-top" alt="">
+                    AK Tourisum</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavBar" 
+                    aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>  
+                </button>
+                <div class="collapse navbar-collapse" id="mynavBar">
+                    <ul class="navbar-nav" style="margin-left: auto;">
+                        <li class="nav-item active">
+                            <a href="/index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about.html" class="nav-link">About Us</a>
+                        <li class="nav-item">
+                            <a href="/contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Packages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-warning" href="#">Tamil Nadu Tour</a>
+                            <a class="dropdown-item text-warning" href="#">India Tour</a>
+                            <a class="dropdown-item text-warning" href="#">Wolrd Tour</a>
+                            </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            help
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Questions</a>
+                            <a class="dropdown-item" href="#">Feedback</a>
+                            <a class="dropdown-item" href="#"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
     </header>
     
     <section class="bg-ak">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-8 text-white">
                     <div class="mt-5">
                         <img src="image/airplane.png" alt="flight-image" width="200">
                         <h2>Make Your Trip Now!!</h2>
                         <p>Your safety and happiness is our responsible</p>
                     </div>
-                    </div>
+                </div>
                 <div class="col-sm-4 mt-5">
                     <div class="card ">
                         <div class="card-body">
                             <form action="/" method="post">
-                                <!-- <div class="form-row"> -->
+                                <div class="row">
                                     <div class="col-sm">
                                         <div class="form-group mb-3">
                                             <label for="fullname" class="form-label">Full Name</label>
@@ -98,26 +100,19 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <button class="form-control btn-primary" >
+                                            <button type="submit" id="submit" class="form-control btn-secondary" >
                                                 Register
                                             </button>
-                                        </div>
+                                        </div>  
                                     </div>
                                 </div>
-
                             </form>
                         </div>
-                        <!-- form -->
                     </div>
-
                 </div>
-
             </div>
         </div>
-
     </section>
-
-
 
 
 </body>

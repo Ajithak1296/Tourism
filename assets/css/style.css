@@ -8,6 +8,7 @@ body{
     background-image: url(https://img.freepik.com/free-vector/travel-time-background-sketchy-style_23-2147507123.jpg?t=st=1740461862~exp=1740465462~hmac=2413636662087d1c36ca0e884dcaa4682ec737e7572ff6cffd8e2ab8f593a574&w=900);
     background-repeat:no-repeat ;
     background-size: cover;
+    z-index: 1;
 }
 .bg-ak::before{
     content: '';
@@ -16,17 +17,7 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right, red, yellow,red );
-    opacity: 0.3;
-}
-.card::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, rgb(171, 15, 15), rgb(35, 193, 224));
-    opacity: 0.2;
-
+    background-image: linear-gradient(to bottom right, red, yellow );
+    opacity: 0.6;
+    z-index: -1;
 }
