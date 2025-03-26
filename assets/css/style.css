@@ -21,3 +21,23 @@ body{
     opacity: 0.6;
     z-index: -1;
 }
+.home-img{
+    position: relative;
+}
+.home-img::before{
+    content: '';
+    position: absolute;
+}
+.widge ul li{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.site-footer{
+    background-color: whitesmoke ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.site-footer a{
+    text-decoration: none;
+    color: rgb(44, 44, 39);
+}
