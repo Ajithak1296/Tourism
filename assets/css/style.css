@@ -2,6 +2,31 @@ body{
     width: 100%;
     height: 100%;
 }
+.navbar a{
+    color: gray;
+    font-weight: 700;
+}
+.navbar a:active{
+    background-color: blue;
+
+}
+.nav-item a:hover{
+    color: chocolate;
+}
+
+.himg{
+    position: relative;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+.himg img{
+    border-radius: 20px;
+}
+.himg img:hover{
+    opacity: 0.4;
+}
 .bg-ak{
     position: relative;
     height: 100vh;
@@ -21,12 +46,29 @@ body{
     opacity: 0.6;
     z-index: -1;
 }
-.home-img{
+.about-img{
     position: relative;
+    color: white;
 }
-.home-img::before{
-    content: '';
+.in-text{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.in-text p{
+    background-color: rgb(231, 165, 165);
+    padding: 2px;
+    text-align: center;
+    font-weight: 500;
+}
+.aboutcont h4{
+    color: brown;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.aboutcont p{
+    line-height: 1.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .widge ul li{
     margin-right: 10px;
@@ -36,8 +78,15 @@ body{
 .site-footer{
     background-color: whitesmoke ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    font-weight: 600;
+    
 }
 .site-footer a{
     text-decoration: none;
-    color: rgb(44, 44, 39);
+    color: gray;
+}
+.site-footer a:hover{
+    color: rgb(34, 37, 230);
+    
 }
