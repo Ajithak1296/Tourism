@@ -3,15 +3,32 @@ body{
     height: 100%;
 }
 .navbar a{
-    color: gray;
+    color: rgb(9, 9, 9);
     font-weight: 700;
 }
-.navbar a:active{
-    background-color: blue;
 
+.nav-item{
+    position: relative;
+    display: inline-block;
 }
-.nav-item a:hover{
-    color: chocolate;
+.dropdown-menu{
+    position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      min-width: 160px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s;
+      pointer-events: none;
+      border-radius: 0.5rem;
+}
+
+.nav-item:hover .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events:auto;
 }
 
 .himg{
@@ -46,6 +63,9 @@ body{
     opacity: 0.6;
     z-index: -1;
 }
+.RG-card{
+    background-color: whitesmoke;
+}
 .about-img{
     position: relative;
     color: white;
@@ -62,13 +82,16 @@ body{
     text-align: center;
     font-weight: 500;
 }
+.card:hover{
+    opacity: 0.7;
+}
 .aboutcont h4{
     color: brown;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
+
 .aboutcont p{
     line-height: 1.7rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .widge ul li{
     margin-right: 10px;
